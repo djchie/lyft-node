@@ -62,22 +62,22 @@ describe('Test Lyft API Node Wrapper', function() {
     },
   };
 
-  it('tests ride types fetch', function() {
+  it('tests ride types fetch', () => {
     return lyft.getRideTypes(rideTypesSearch)
                  .then(response => console.log(response));
   });
 
-  it('tests driver eta fetch', function() {
+  it('tests driver eta fetch', () => {
     return lyft.getDriverEta(driverEtaSearch)
                  .then(response => console.log(response));
   });
 
-  it('tests ride estimates fetch', function() {
+  it('tests ride estimates fetch', () => {
     return lyft.getRideEstimates(rideEstimatesSearch)
                  .then(response => console.log(response));
   });
 
-  it('tests nearby drivers fetch', function() {
+  it('tests nearby drivers fetch', () => {
     return lyft.getNearbyDrivers(nearbyDriversSearch)
                  .then(response => console.log(response));
   });
