@@ -1,6 +1,6 @@
 {
   "name": "lyft-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a Node.js Wrapper for the Lyft API's public scope endpoints",
   "main": "./build/index.js",
   "scripts": {
