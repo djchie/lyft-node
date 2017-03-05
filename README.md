@@ -2,6 +2,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/djchie/lyft-node/badge.svg?branch=master)](https://coveralls.io/github/djchie/lyft-node?branch=master)
 [![npm version](https://badge.fury.io/js/lyft-node.svg)](https://badge.fury.io/js/lyft-node)
 
+[![NPM](https://nodei.co/npm/lyft-node.png?downloads=true)](https://nodei.co/npm/lyft-node/)
+
 # A Node Wrapper for the Lyft API
 
 ## Introduction
