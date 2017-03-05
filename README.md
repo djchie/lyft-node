@@ -21,6 +21,7 @@ Takes a ride types search query and returns a response wrapped in a Promise.
 #### Ride Types Search Query
 ##### Required:
 * `start [coordinate]`
+
 ##### Optional:
 * `rideType [string]` (must be `lyft`, `lyft_line`, or `lyft_plus`)
 
@@ -52,6 +53,7 @@ Takes a driver eta search query and returns a response wrapped in a Promise.
 #### Driver ETA Search Query
 ##### Required:
 * `start [coordinate]`
+
 ##### Optional:
 * `end [coordinate]`
 * `rideType [string]` (must be `lyft`, `lyft_line`, or `lyft_plus`)
