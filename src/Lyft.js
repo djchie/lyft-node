@@ -20,6 +20,8 @@ export default class Lyft {
     this.accessToken;
     this.expiresIn;
     this.scope;
+
+    this.expirationDate;
   }
 
   getAccessToken() {
@@ -44,6 +46,11 @@ export default class Lyft {
         this.accessToken = result.access_token;
         this.expiresIn = result.expires_in;
         this.scope = result.scope;
+
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        this.expirationDate = tomorrow;
+
         return result;
       })
       .catch(function(err) {
@@ -79,20 +86,6 @@ export default class Lyft {
     );
   }
 
-  // getPriceEstimates(search) {
-  //   return this.execute(
-  //     Subpath.PRICE_ESTIMATES,
-  //     PriceEstimatesSearchBuilder.build(search).toParameters().toJS()
-  //   );
-  // }
-
-  // getTimeEstimates(search) {
-  //   return this.execute(Subpath.TIME_ESTIMATES,
-  //                       TimeEstimatesSearchBuilder.build(search)
-  //                                                 .toParameters()
-  //                                                 .toJS());
-  // }
-
   async execute(subpath, parameters) {
     const options = await this.buildOptions(subpath, parameters);
     return rp(options)
@@ -104,8 +97,9 @@ export default class Lyft {
 
   async buildOptions(subpath, parameters) {
 
-    // Also check for time here in the future
-    if (!this.tokenType || !this.accessToken) {
+    const nowDate = new Date();
+
+    if (!this.tokenType || !this.accessToken || !this.expirationDate || nowDate > this.expirationDate) {
       await this.getAccessToken();
     }
 
