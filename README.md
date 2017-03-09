@@ -146,3 +146,9 @@ lyft.getNearbyDrivers(query)
     console.log(error);
   });
 ```
+
+## License
+[MIT](LICENSE.md)
+
+## Credits
+This project is heavily inspired by [Jae Bradley's](https://github.com/jaebradley) [uber-client](https://github.com/jaebradley/uber-client)
