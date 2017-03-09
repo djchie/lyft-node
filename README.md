@@ -151,4 +151,4 @@ lyft.getNearbyDrivers(query)
 [MIT](LICENSE.md)
 
 ## Credits
-This project is heavily inspired by [Jae Bradley's](https://github.com/jaebradley) [uber-client](https://github.com/jaebradley/uber-client)
+This project is heavily inspired by [Jae Bradley](https://github.com/jaebradley)'s [uber-client](https://github.com/jaebradley/uber-client)
