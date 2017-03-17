@@ -3,4 +3,4 @@
 import 'babel-polyfill';
 import Lyft from './Lyft';
 
-export default Lyft;
+module.exports = Lyft;

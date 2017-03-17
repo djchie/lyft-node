@@ -2,7 +2,7 @@
 
 const dotenv = require('dotenv');
 
-const Lyft = require('./build/index').default;
+const Lyft = require('./build/index');
 
 dotenv.load();
 
