@@ -6,7 +6,7 @@ const Lyft = require('./build/index');
 
 dotenv.load();
 
-const lyft = new Lyft(process.env.LYFT_CLIENT_ID, process.env.LYFT_CLIENT_SECRET)
+const lyft = new Lyft(process.env.LYFT_CLIENT_ID, process.env.LYFT_CLIENT_SECRET);
 
 const query = {
   start: {

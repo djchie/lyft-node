@@ -36,7 +36,7 @@ const lyft = new Lyft('LYFT_CLIENT_ID', 'LYFT_CLIENT_SECRET');
 const query = {
   start: {
       latitude: 1,
-        longitude: 2,
+      longitude: 2,
     },
 };
 
@@ -69,7 +69,7 @@ const lyft = new Lyft('LYFT_CLIENT_ID', 'LYFT_CLIENT_SECRET');
 const query = {
   start: {
       latitude: 1,
-        longitude: 2,
+      longitude: 2,
     },
 };
 
@@ -100,11 +100,11 @@ const lyft = new Lyft('LYFT_CLIENT_ID', 'LYFT_CLIENT_SECRET');
 const query = {
   start: {
       latitude: 1,
-        longitude: 2,
+      longitude: 2,
     },
     end: {
       latitude: 3,
-        longitude: 4,
+      longitude: 4,
     },
     rideType: 'lyft',
 };
@@ -134,7 +134,7 @@ const lyft = new Lyft('LYFT_CLIENT_ID', 'LYFT_CLIENT_SECRET');
 const query = {
   start: {
       latitude: 1,
-        longitude: 2,
+      longitude: 2,
     },
 };
 
