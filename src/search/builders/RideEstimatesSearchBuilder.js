@@ -24,12 +24,10 @@ export default class RideEstimatesSearchBuilder {
     let endCoordinate = CoordinateBuilder.build(json['end']);
     args = args.set('endCoordinate', endCoordinate);
 
-    if (!('rideType' in json)) {
-      throw new TypeError('rideType is not in the search');
+    if ('rideType' in json) {
+      let rideType = RideEstimatesSearchBuilder.validateRideType(json['rideType']);
+      args = args.set('rideType', rideType);
     }
-
-    let rideType = RideEstimatesSearchBuilder.validateRideType(json['rideType']);
-    args = args.set('rideType', rideType);
 
     return new RideEstimatesSearch(args);
   }

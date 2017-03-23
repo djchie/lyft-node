@@ -17,9 +17,10 @@ const query = {
     latitude: 37.7922,
     longitude: -122.4012,
   },
+  rideType: 'lyft_line',
 };
 
-lyft.getRideTypes(query)
+lyft.getRideEstimates(query)
   .then((result) => {
     console.log(result);
   })
