@@ -89,6 +89,8 @@ Takes a ride estimates search query and returns a response wrapped in a Promise.
 ##### Required:
 * `start [coordinate]`
 * `end [coordinate]`
+
+##### Optional:
 * `rideType [string]` (must be `lyft`, `lyft_line`, or `lyft_plus`)
 
 #### Example
