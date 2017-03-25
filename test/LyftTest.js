@@ -8,7 +8,7 @@ import Lyft from '../src/index';
 
 dotenv.load();
 
-describe('Test Lyft API Node Wrapper', function() {
+describe('Test Lyft API Node Wrapper', () => {
   const lyft = new Lyft(
     process.env.LYFT_CLIENT_ID,
     process.env.LYFT_CLIENT_SECRET
